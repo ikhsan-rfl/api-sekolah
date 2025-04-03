@@ -142,7 +142,7 @@ https://sekolah.devapi.id/sekolah?nama=citra&bentuk_pendidikan=SMP&kode_wilayah=
 |kode_wilayah|3174|Kode wilayah kemendagri (contoh: '3174' untuk Kota Cirebon, Provinsi Jawa Barat)|
 
 ## ℹ️ Informasi Tambahan
-- API memiliki rate limit global yaitu 300 request / 3 menit.
+- API memiliki rate limit global yaitu 300 request / 1 menit.
 - API memiliki sistem cache, jika request HIT maka tidak mengurangi sisa requests.
 
 ## Masalah atau Saran?
