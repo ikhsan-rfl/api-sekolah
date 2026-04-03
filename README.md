@@ -15,7 +15,6 @@ API sekolah ini berisi informasi lengkap tentang sekolah-sekolah di Indonesia. A
 |negara|string|	Filter sekolah berdasarkan negara (default: Indonesia). Contoh: `Indonesia`, `Malaysia`, dll (sekolah yang terdaftar di indonesia)|
 |akreditasi|string|Filter berdasarkan nilai akreditasi. Contoh: `A`, `B`, `C`, dll|
 |kode_wilayah|integer|Mencari sekolah berdasarkan kode wilayah Kemendagri. Contoh: 3171 (Kota Jakarta Pusat), 350718 (Kecamatan Pakis, Kota Malang)  __[1]__|
-|page|integer|Nomor halaman hasil pencarian. (Default: __10__)|
 |limit|integer|Jumlah maksimal data yang ditampilkan per halaman. (Default: __10__, Max: __100__)|
 
 ### 📌 Catatan:
@@ -142,8 +141,9 @@ https://sekolah.devapi.id/sekolah?nama=citra&bentuk_pendidikan=SMP&kode_wilayah=
 |kode_wilayah|3174|Kode wilayah kemendagri (contoh: '3174' untuk Kota Cirebon, Provinsi Jawa Barat)|
 
 ## ℹ️ Informasi Tambahan
-- API memiliki rate limit global yaitu 300 request / 1 menit.
+- API memiliki rate limit global yaitu 60 request / 1 menit.
 - API memiliki sistem cache, jika request HIT maka tidak mengurangi sisa requests.
+- Parameter `page` dihapus dikarenakan banyaknya upaya scraping yang membebani server. 
 
 ## Masalah atau Saran?
 Jika ada masalah pada API ini atau memiliki saran, silakan:
