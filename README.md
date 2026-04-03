@@ -1,12 +1,12 @@
-# 📚 API Data Sekolah Seluruh Indonesia
+# API Data Sekolah Seluruh Indonesia
 API sekolah ini berisi informasi lengkap tentang sekolah-sekolah di Indonesia. API ini mencakup hampir semua jenjang pendidikan yang ada di Indonesia, mulai dari TK, SD, SMP, SMA, MA, sampai pendidikan non-formal.
 
 # Dokumentasi
-🌐 __URL API :__ `https://sekolah.devapi.id/sekolah`
+__URL API :__ `https://sekolah.devapi.id/sekolah`
 
-📤 __HTTP Method :__ `GET`
+__HTTP Method :__ `GET`
 
-## 📝 __Parameter API__
+## __Parameter API__
 |Nama|Tipe Data|Deskripsi|
 |-|-|-|
 |nama|string|	Mencari sekolah berdasarkan nama (case-insensitive) (Min: __3 karakter__). Contoh: `SMA Negeri 1 Purwadadi` (exact match), `bina insani` (substring)|
@@ -17,11 +17,11 @@ API sekolah ini berisi informasi lengkap tentang sekolah-sekolah di Indonesia. A
 |kode_wilayah|integer|Mencari sekolah berdasarkan kode wilayah Kemendagri. Contoh: 3171 (Kota Jakarta Pusat), 350718 (Kecamatan Pakis, Kota Malang)  __[1]__|
 |limit|integer|Jumlah maksimal data yang ditampilkan per halaman. (Default: __10__, Max: __100__)|
 
-### 📌 Catatan:
+### Catatan:
 - Untuk referensi kode wilayah bisa dilihat di website [kodewilayah.id](https://kodewilayah.id). __[1]__
 - Parameter bisa digabungkan untuk mempersempit pencarian.
 
-## 💡 __Contoh Respons__
+## __Contoh Respons__
 ```
 {
     "success": true,
@@ -94,7 +94,7 @@ API sekolah ini berisi informasi lengkap tentang sekolah-sekolah di Indonesia. A
 }
 ```
 
-## 🚀 Contoh Penggunaan
+## Contoh Penggunaan
 ### Pencarian Dasar
 #### • Mencari sekolah bedasarkan nama
 ```
@@ -140,7 +140,7 @@ https://sekolah.devapi.id/sekolah?nama=citra&bentuk_pendidikan=SMP&kode_wilayah=
 |bentuk_pendidikan|SMP|Jenis pendidikan (contoh: 'SMP' untuk Sekolah Menengah Pertama)|
 |kode_wilayah|3174|Kode wilayah kemendagri (contoh: '3174' untuk Kota Cirebon, Provinsi Jawa Barat)|
 
-## ℹ️ Informasi Tambahan
+## Informasi Tambahan
 - API memiliki rate limit global yaitu 60 request / 1 menit.
 - API memiliki sistem cache, jika request HIT maka tidak mengurangi sisa requests.
 - Parameter `page` dihapus dikarenakan banyaknya upaya scraping yang membebani server. 
