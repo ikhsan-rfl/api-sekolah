@@ -142,7 +142,7 @@ https://sekolah.devapi.id/sekolah?nama=citra&bentuk_pendidikan=SMP&kode_wilayah=
 
 ## Informasi Tambahan
 - API memiliki rate limit global yaitu 60 request / 1 menit.
-- API memiliki sistem cache, jika request HIT maka tidak mengurangi sisa requests.
+- API memiliki sistem cache, jika request HIT maka tetap mengurangi sisa requests.
 - Parameter `page` dihapus dikarenakan banyaknya upaya scraping yang membebani server. 
 
 ## Masalah atau Saran?
